@@ -25,7 +25,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public BaseResponse<Order> getOrderStatus(OrderDetailQueryRequest orderDetailQueryRequest) {
 
-        if(orderDetailQueryRequest != null){
+        if(orderDetailQueryRequest == null){
             return BaseResponse.result(Status.PARAMS_ERROR);
         }
 
