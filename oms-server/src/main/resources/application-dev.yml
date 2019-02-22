@@ -1,0 +1,38 @@
+mybatis:
+  config-location: classpath:mybatis/SqlMapConfig.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://118.24.42.215:3307/ordercenter
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  redis:
+    timeout: 5000
+    host: 118.24.42.215
+    port: 6379
+
+  activemq:
+    user: admin
+    password: admin
+    broker-url: tcp://118.24.42.215:61616
+    pool:
+      enabled: true
+      max-connections: 50
+    packages:
+      trust-all: false
+
+dubbo:
+  application:
+    name: oms
+  registry:
+    address: zookeeper://118.24.42.215:2181
+  scan:
+    basePackages: com.xy.server.rpc.provider
+  protocol:
+    port: 20880
+server:
+  port: 7551
