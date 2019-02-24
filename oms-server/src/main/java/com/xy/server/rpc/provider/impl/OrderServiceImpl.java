@@ -23,7 +23,7 @@ public class OrderServiceImpl implements OrderService {
     private OrderMapper orderMapper;
 
     @Override
-    public BaseResponse<Order> getOrderStatus(OrderDetailQueryRequest orderDetailQueryRequest) {
+    public BaseResponse<Order> getOrderDetail(OrderDetailQueryRequest orderDetailQueryRequest) {
 
         if(orderDetailQueryRequest == null){
             return BaseResponse.result(Status.PARAMS_ERROR);

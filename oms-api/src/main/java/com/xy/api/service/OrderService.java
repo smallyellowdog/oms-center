@@ -5,5 +5,5 @@ import com.xy.common.response.BaseResponse;
 import com.xy.pojo.order.Order;
 
 public interface OrderService {
-     BaseResponse<Order> getOrderStatus(OrderDetailQueryRequest orderDetailQueryRequest);
+     BaseResponse<Order> getOrderDetail(OrderDetailQueryRequest orderDetailQueryRequest);
 }
