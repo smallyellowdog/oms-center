@@ -1,10 +1,10 @@
 package com.xy.server.rpc.provider.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.xy.api.constant.Status;
 import com.xy.api.request.OrderDetailQueryRequest;
-import com.xy.api.response.BaseResponse;
 import com.xy.api.service.OrderService;
+import com.xy.common.constant.Status;
+import com.xy.common.response.BaseResponse;
 import com.xy.mapper.OrderMapper;
 import com.xy.pojo.order.Order;
 import com.xy.pojo.order.OrderExample;
